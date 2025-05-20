@@ -17,7 +17,19 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"d1_databases": [
+    {
+      "binding": "NEXT_TAG_CACHE_D1",
+      "database_id": "39ecf36c-efb9-4fdd-88b4-4338cbf7ed60",
+      "database_name": "hey-games-db",
+    }],
+    "services": [
+        {
+        "binding": "WORKER_SELF_REFERENCE",
+        "service": "my-next-app",
+        },
+    ],
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
